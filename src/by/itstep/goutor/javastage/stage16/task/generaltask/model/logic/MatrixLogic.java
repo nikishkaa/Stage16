@@ -8,12 +8,12 @@ public class MatrixLogic {
 
         int matrixBoundarySum = 0;
 
-        int firstLineSum = getSumFirstLine(matrix);
+        int firstLineSum = getSumFirstLine(matrix[0]);
 
         return matrixBoundarySum;
     }
 
-    private static int getSumFirstLine(int[][] matrix) {
+    private static int getSumFirstLine(int[] matrix) {
         int firstLineSum = 0;
 
         for (int i = 0; i < matrix[0].length; i++) {
