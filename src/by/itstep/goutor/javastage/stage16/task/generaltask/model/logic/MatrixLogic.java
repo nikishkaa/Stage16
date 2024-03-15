@@ -20,6 +20,7 @@ public class MatrixLogic {
             firstLineSum += matrix[i][];
         }
 
+
         System.out.println("first line sum " + firstLineSum);
         return firstLineSum;
     }
