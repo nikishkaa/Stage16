@@ -16,6 +16,23 @@ public class MatrixLogic {
         return firstLineSum + lastLineSum + firstColumnSum + lastColumnSum;
     }
 
+
+    public static boolean getMagicSquare(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return false;
+        }
+
+        if (!getSquareMatrix(matrix)) {    // !!!!!!!!!!!Сделать Тест!!!!
+            return false;
+        }
+
+        boolean magicSquare = false;
+
+
+        return magicSquare;
+    }
+
+
     private static int getSumFirstLine(int[] matrixFirstLine) {
         int firstLineSum = 0;
 
@@ -57,4 +74,14 @@ public class MatrixLogic {
     }
 
 
+    private static boolean getSquareMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if (i != j) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }

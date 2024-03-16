@@ -11,7 +11,7 @@ public class Main {
         int[][] matrix = MatrixInit.initMatrix();
 
         int matrixBoundarySum = MatrixLogic.getSumMatrixBoundaryElement(matrix);
-
+        boolean magicSquare = MatrixLogic.getMagicSquare(matrix);
 
         StringBuilder startMatrix = MatrixConverter.getMatrix(matrix);
 

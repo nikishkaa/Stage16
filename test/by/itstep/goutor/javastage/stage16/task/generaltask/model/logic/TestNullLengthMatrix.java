@@ -21,4 +21,13 @@ public class TestNullLengthMatrix {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testMagicSquare() {
+        boolean expected = false;
+
+        boolean actual = MatrixLogic.getMagicSquare(matrix);
+
+        assertEquals(expected, actual);
+    }
 }
