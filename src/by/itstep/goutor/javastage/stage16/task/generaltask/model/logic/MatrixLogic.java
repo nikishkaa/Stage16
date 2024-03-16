@@ -8,20 +8,31 @@ public class MatrixLogic {
 
         int matrixBoundarySum = 0;
 
+        int[] matrixLastLine = matrix[matrix.length - 1];
+
         int firstLineSum = getSumFirstLine(matrix[0]);
+        int lastLineSum = getSumLastLine(matrix[matrix.length - 1]);
 
         return matrixBoundarySum;
     }
 
-    private static int getSumFirstLine(int[] matrix) {
+    private static int getSumFirstLine(int[] matrixFirstLine) {
         int firstLineSum = 0;
 
-//        for (int i = 0; i < matrix[0].length; i++) {
-//            firstLineSum += matrix[i][];
-//        }
+        for (int i : matrixFirstLine) {
+            firstLineSum += i;
+        }
 
-
-        System.out.println("first line sum " + firstLineSum);
         return firstLineSum;
+    }
+
+    private static int getSumLastLine(int[] matrixLastLine) {
+        int lastLineSum = 0;
+
+        for (int i : matrixLastLine) {
+            lastLineSum += i;
+        }
+
+        return lastLineSum;
     }
 }
