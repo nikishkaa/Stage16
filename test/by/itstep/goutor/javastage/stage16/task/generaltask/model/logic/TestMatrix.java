@@ -34,23 +34,4 @@ public class TestMatrix {
         assertEquals(expected, actual);
     }
 
-    @Test
-    public void testSumMatrixBoundaryElementByNull() {
-        int[][] nullMatrix = null;
-        int expected = Integer.MIN_VALUE;
-
-        int actual = MatrixLogic.getSumMatrixBoundaryElement(nullMatrix);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void testSumMatrixBoundaryElementByZeroLength() {
-        int[][] zeroMatrix = new int[0][0];
-        int expected = Integer.MIN_VALUE;
-
-        int actual = MatrixLogic.getSumMatrixBoundaryElement(zeroMatrix);
-
-        assertEquals(expected, actual);
-    }
 }

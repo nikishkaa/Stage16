@@ -16,9 +16,9 @@ public class MatrixLogic {
     private static int getSumFirstLine(int[] matrix) {
         int firstLineSum = 0;
 
-        for (int i = 0; i < matrix[0].length; i++) {
-            firstLineSum += matrix[i][];
-        }
+//        for (int i = 0; i < matrix[0].length; i++) {
+//            firstLineSum += matrix[i][];
+//        }
 
 
         System.out.println("first line sum " + firstLineSum);
