@@ -7,7 +7,8 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder() {
+    public static StringBuilder getMatrixUI(int matrixBoundarySum) {
 
+        return BUILDER.append("Sum Boundary matrix elements ").append(matrixBoundarySum);
     }
 }
