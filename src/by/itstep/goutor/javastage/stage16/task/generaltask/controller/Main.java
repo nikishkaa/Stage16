@@ -9,7 +9,8 @@ public class Main {
     public static void main(String[] args) {
         int[][] matrix = MatrixInit.initMatrix();
 
-        int firstLineSum = MatrixLogic.getSumMatrixBoundaryElement(matrix);
+        int matrixBoundarySum = MatrixLogic.getSumMatrixBoundaryElement(matrix);
+
 
         StringBuilder startMatrix = MatrixConverter.getMatrix(matrix);
 
