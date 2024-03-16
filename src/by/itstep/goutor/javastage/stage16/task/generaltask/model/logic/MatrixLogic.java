@@ -13,9 +13,7 @@ public class MatrixLogic {
         int firstColumnSum = getFirstColumnSum(matrix);
         int lastColumnSum = getLastColumnSum(matrix);
 
-        int matrixBoundarySum = firstLineSum + lastLineSum + firstColumnSum + lastColumnSum;
-
-        return matrixBoundarySum;
+        return firstLineSum + lastLineSum + firstColumnSum + lastColumnSum;
     }
 
     private static int getSumFirstLine(int[] matrixFirstLine) {
