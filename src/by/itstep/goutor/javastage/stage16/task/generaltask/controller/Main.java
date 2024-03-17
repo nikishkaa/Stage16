@@ -12,9 +12,10 @@ public class Main {
 
         int matrixBoundarySum = MatrixLogic.getSumMatrixBoundaryElement(matrix);
         boolean magicSquare = MatrixLogic.getMagicSquare(matrix);
-
         StringBuilder startMatrix = MatrixConverter.getMatrix(matrix);
 
+
+        System.out.println(magicSquare);
         Printer.print(startMatrix);
         Printer.print(MatrixUI.getMatrixUI(matrixBoundarySum));
     }
