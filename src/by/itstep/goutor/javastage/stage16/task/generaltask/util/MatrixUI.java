@@ -7,8 +7,9 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI(int matrixBoundarySum) {
+    public static StringBuilder getMatrixUI(int matrixBoundarySum, boolean magicSquare) {
 
-        return BUILDER.append("Sum Boundary matrix elements ").append(matrixBoundarySum);
+        return BUILDER.append("Sum Boundary matrix elements ").append(matrixBoundarySum)
+                .append("\nMatrix is magic ").append(magicSquare ? "Yes" : "No");
     }
 }

@@ -15,8 +15,7 @@ public class Main {
         StringBuilder startMatrix = MatrixConverter.getMatrix(matrix);
 
 
-        System.out.println(magicSquare);
         Printer.print(startMatrix);
-        Printer.print(MatrixUI.getMatrixUI(matrixBoundarySum));
+        Printer.print(MatrixUI.getMatrixUI(matrixBoundarySum, magicSquare));
     }
 }
