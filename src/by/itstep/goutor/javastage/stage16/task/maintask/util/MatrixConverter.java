@@ -1,4 +1,4 @@
-package by.itstep.goutor.javastage.stage16.task.generaltask.util;
+package by.itstep.goutor.javastage.stage16.task.maintask.util;
 
 public class MatrixConverter {
     public static StringBuilder BUILDER;
@@ -7,14 +7,13 @@ public class MatrixConverter {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrix(int[][] matrix) {
-        for (int[] ints : matrix) {
+    public static StringBuilder convertMatrix(int[][] matrix) {
+        for (int[] flag : matrix) {
             for (int j = 0; j < matrix.length; j++) {
-                BUILDER.append(ints[j]).append(" ");
+                BUILDER.append(flag[j]).append(" ");
             }
             BUILDER.append("\n");
         }
-
 
         return BUILDER;
     }

@@ -1,5 +1,6 @@
 package by.itstep.goutor.javastage.stage16.task.generaltask.model.logic;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,6 +12,11 @@ public class TestNullLengthMatrix {
     @Before
     public void matrixInit() {
         matrix = new int[0][0];
+    }
+
+    @After
+    public void clearing() {
+        matrix = null;
     }
 
     @Test
