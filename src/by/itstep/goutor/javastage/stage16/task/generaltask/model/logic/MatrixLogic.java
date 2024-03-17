@@ -93,8 +93,8 @@ public class MatrixLogic {
 
     //O(N)
     private static boolean getSquareMatrix(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            if (matrix[i].length != matrix.length) {
+        for (int[] flag : matrix) {
+            if (flag.length != matrix.length) {
                 return false;
             }
 
