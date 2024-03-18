@@ -7,8 +7,10 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI() {
+    public static StringBuilder getMatrixUI(int sumPosElem) {
 
-        return BUILDER;
+        return BUILDER
+                .append("Sum elements between first and second posit element ")
+                .append(sumPosElem);
     }
 }

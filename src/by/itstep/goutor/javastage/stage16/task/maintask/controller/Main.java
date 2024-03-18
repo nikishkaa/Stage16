@@ -11,10 +11,9 @@ public class Main {
         int[][] matrix = MatrixInit.initMatrix();
 
         int sumPosElem = MatrixLogic.getSumElementsBetweenFirstAndSecondPositiveElement(matrix);
-        System.out.println("!!!!!!!!!!!" + sumPosElem);
 
 
         Printer.print(MatrixConverter.convertMatrix(matrix));
-        Printer.print(MatrixUI.getMatrixUI());
+        Printer.print(MatrixUI.getMatrixUI(sumPosElem));
     }
 }

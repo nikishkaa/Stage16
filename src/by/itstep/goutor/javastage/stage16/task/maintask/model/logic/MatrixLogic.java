@@ -11,12 +11,13 @@ public class MatrixLogic {
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
-                if (matrix[i][j] > 0 && countPosEl < 3) {
+                if (matrix[i][j] > 0 && countPosEl == 2) {
+                    break;
+                } else if (matrix[i][j] < 1 && countPosEl != 0) {
                     sumPosElem += matrix[i][j];
-                    System.out.println(matrix[i][j]);
                     countPosEl++;
                 }
-
+                countPosEl++;
 
             }
         }
