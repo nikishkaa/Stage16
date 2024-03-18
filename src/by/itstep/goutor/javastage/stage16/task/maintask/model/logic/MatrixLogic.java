@@ -7,6 +7,19 @@ public class MatrixLogic {
         }
 
         int sumPosElem = 0;
+        int countPosEl = 0;
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if (matrix[i][j] > 0 && countPosEl < 3) {
+                    sumPosElem += matrix[i][j];
+                    System.out.println(matrix[i][j]);
+                    countPosEl++;
+                }
+
+
+            }
+        }
 
 
         return sumPosElem;
