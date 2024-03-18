@@ -22,7 +22,19 @@ public class MatrixLogic {
             }
         }
 
-
         return sumPosElem;
     }
+
+
+    public static int getMatrixMonColumn(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return -1;
+        }
+
+        int numColum = 0;
+
+
+        return numColum;
+    }
+
 }

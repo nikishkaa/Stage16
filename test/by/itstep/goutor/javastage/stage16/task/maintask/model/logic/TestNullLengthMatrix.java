@@ -28,4 +28,13 @@ public class TestNullLengthMatrix {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testMatrixMonColumn() {
+        int expected = -1;
+
+        int actual = MatrixLogic.getMatrixMonColumn(matrix);
+
+        assertEquals(expected, actual);
+    }
+
 }
