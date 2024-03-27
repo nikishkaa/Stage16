@@ -48,7 +48,6 @@ public class MatrixLogic {
                 if (isDecreasing || isIncreasing) {
                     numColum = j;
                 }
-
             }
         }
 

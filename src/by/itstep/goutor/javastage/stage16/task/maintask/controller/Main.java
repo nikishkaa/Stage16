@@ -9,11 +9,12 @@ import by.itstep.goutor.javastage.stage16.util.view.Printer;
 public class Main {
     public static void main(String[] args) {
         int[][] matrix = MatrixInit.initMatrix();
+        int numColum = MatrixLogic.getMatrixMonColumn(matrix);
 
         int sumPosElem = MatrixLogic.getSumElementsBetweenFirstAndSecondPositiveElement(matrix);
-        System.out.println(MatrixLogic.getMatrixMonColumn(matrix));
+
 
         Printer.print(MatrixConverter.convertMatrix(matrix));
-        Printer.print(MatrixUI.getMatrixUI(sumPosElem));
+        Printer.print(MatrixUI.getMatrixUI(sumPosElem, numColum));
     }
 }
