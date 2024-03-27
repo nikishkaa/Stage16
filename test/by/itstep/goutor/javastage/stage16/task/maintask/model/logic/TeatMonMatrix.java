@@ -12,7 +12,8 @@ public class TeatMonMatrix {
 
     @Before
     public void initMatrix() {
-        matrix = new int[][]{{1, 2, 3},
+        matrix = new int[][]{
+                {1, 2, 3},
                 {2, 5, 6},
                 {3, 8, 9}};
     }

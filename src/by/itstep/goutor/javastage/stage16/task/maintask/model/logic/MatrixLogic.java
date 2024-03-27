@@ -31,8 +31,26 @@ public class MatrixLogic {
             return -1;
         }
 
-        int numColum = 0;
+        int numColum = -1;
+        boolean isIncreasing = false;
+        boolean isDecreasing = false;
 
+        for (int j = 0; j < matrix[0].length; j++) {
+            for (int i = 1; i < matrix.length; i++) {
+                if (matrix[i][j] > matrix[i - 1][j]) {
+                    isDecreasing = true;
+                }
+
+                if (matrix[i][j] < matrix[i - 1][j]) {
+                    isIncreasing = true;
+                }
+
+                if (isDecreasing || isIncreasing) {
+                    numColum = j;
+                }
+
+            }
+        }
 
         return numColum;
     }
