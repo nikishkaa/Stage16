@@ -23,6 +23,7 @@ public class TeatMonMatrix {
         matrix = null;
     }
 
+
     @Test
     public void testMatrixMonColumn() {
         int expected = 1;
